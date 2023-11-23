@@ -1,13 +1,16 @@
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 5vh;
+
+.footer-container {
     background: #FFC7C7;
-    left: 0;
-    bottom: 0;
+    color: #7071E8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-info {
+    max-width: 600px;
+    margin: 0 auto;
     p{
         background-color: #FFC7C7;
+        font-weight: bold
     }
   }

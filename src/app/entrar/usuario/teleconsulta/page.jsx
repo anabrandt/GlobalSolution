@@ -1,17 +1,13 @@
 import "./page.scss";
-import React from 'react';
-import { showAlert } from './teleconsulta'
+import Link from "next/link";
 
 export default function Teleconsulta() {
-  const handleClick = () => {
-    showAlert();
-  };
 
   return (
-    <main>
+    <main className="teleconsulta">
       <h1>Agende sua consulta aqui</h1>
       <div className="center-container">
-        <select id="opcoes" name="opcao">
+        <select id="opcoes" name="opcao" >
           <option value="opcao1">Acompanhamento Ginecológico Online</option>
           <option value="opcao2">Avaliação de Sintomas</option>
           <option value="opcao3">Orientações Nutricionais</option>
@@ -23,9 +19,8 @@ export default function Teleconsulta() {
         </select>
       </div>
       <div className="center-container">
-        <button id="agendarButton" onClick={handleClick}>
-          Agendar
-        </button>
+      <Link href={'/home'}><button >Agendar</button></Link>
+
       </div>
     </main>
   );
