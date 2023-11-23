@@ -23,13 +23,13 @@ export default function Entrar() {
                         required
                     />
                     <Link href={'entrar/usuario'}><button>Entrar</button></Link>
+                    
+                    <div className="instrucoes">
+                        <p><a href="#">Esqueceu sua senha?</a></p>
+                        <Link href={'entrar/cadastro'}>Ainda não é cadastrado? Clique aqui para fazer o cadastro</Link>
+                    </div>
                 </form>
 
-                <div className="instrucoes">
-                    <p><a href="#">Esqueceu sua senha?</a></p>
-
-                    <Link href={'entrar/cadastro'}>Ainda não é cadastrado? Clique aqui para fazer o cadastro</Link>
-                </div>
 
 
             </div>
