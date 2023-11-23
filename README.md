@@ -24,7 +24,13 @@ automatizado das etapas do pré-natal - com um diagnóstico mais que eficiente
 - `Flask`: Framework web para Python, utilizado para criar o servidor e integrar modelos de machine learning.
 - `SASS: `: Estilização de componentes.
 
-## 🛠️ Abrir e rodar o projeto
+## 🛠️ Membros 1TDSPJ
+
+Sofia Sprocatti Silva – RM99208
+Ana Carolina Tavares – RM552283
+Caique Almeida Dias – RM99778
+Felipe Dias Cerezuella – RM551663
+Vinicius Rebollo Minei – RM98486
 
 **Apresente as instruções necessárias para abrir e executar o projeto**
 
