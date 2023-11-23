@@ -52,11 +52,12 @@ export default function Cadastro() {
             required
             placeholder="Digite seu CPF"
           />
-          
-          <button className="botao-entrar" type="submit">Entrar</button>
+
+          <Link href='/entrar/usuario'><button className="botao-entrar">Entrar</button></Link>
+
           <div>
             <Link href={'/entrar'}>Já tem uma conta? Clique aqui para fazer o login</Link>
-          </div>            
+          </div>
         </form>
       </div>
     </main>
