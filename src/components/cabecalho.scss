@@ -1,0 +1,49 @@
+/* cabecalho.scss */
+
+.header {
+    background-color: #FFC7C7;
+    padding: 20px;
+    // min-height: 20vh;
+    // height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFC7C7;
+
+        nav {
+            display: flex;
+            gap: 20px;
+            background-color: #FFC7C7;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: #333333;
+                font-weight: 500;
+                font-size: 16px;
+                background-color: #FFC7C7;
+
+                &:hover {
+                    color: #7071E8;
+                }
+            }
+        }
+    }
+}
+
+#entrar-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#entrar-btn:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
