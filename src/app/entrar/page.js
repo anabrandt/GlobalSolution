@@ -9,6 +9,7 @@ const Login = () => {
   const [cpf, setCpf] = useState('');
   const [senha, setSenha] = useState('');
   const [error, setError] = useState('');
+  const [httpStatus, setHttpStatus] = useState(null);
   const router = useRouter();
 
   const handleLogin = async () => {
@@ -20,14 +21,19 @@ const Login = () => {
         },
       });
 
-      const user = await response.json();
+      setHttpStatus(response.status);
 
-      if (user && user.senha === senha) {
-        sessionStorage.setItem('usuario', JSON.stringify(user));
+      if (response.ok) {
+        const user = await response.json();
 
-        router.push('/');
+        if (user && user.senha === senha) {
+          sessionStorage.setItem('usuario', JSON.stringify(user));
+          router.push('/');
+        } else {
+          setError('CPF ou senha inválidos');
+        }
       } else {
-        setError('CPF ou senha inválidos');
+        setError('Erro ao autenticar');
       }
     } catch (error) {
       console.error('Erro ao autenticar:', error);
@@ -37,10 +43,10 @@ const Login = () => {
   return (
     <main className="form">
       <h1>Entre em sua conta</h1>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      {httpStatus && httpStatus !== 200 && <p style={{ color: 'red' }}>{`Erro ${httpStatus}: ${error}`}</p>}
       <br />
       <label>
-        CPF:
+        Email:
         <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} />
       </label>
       <br />
@@ -49,7 +55,7 @@ const Login = () => {
         <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
       </label>
       <br />
-      <button onClick={handleLogin} href="entrar/usuario">Entrar</button>
+      <button onClick={handleLogin}>Entrar</button>
       <br />
       <p>
         Ainda não tem uma conta?{' '}
