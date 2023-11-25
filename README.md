@@ -25,7 +25,7 @@ automatizado das etapas do pré-natal - com um diagnóstico mais que eficiente
 - `SASS`
 
 ## 🔒 Acessos
-para acessar o site insira o email e senha, o mesmo se aplica para o cadastro
+para entrar no site insira o email e senha, o mesmo se aplica para o cadastro
 
 
 ## 🛠️ Membros 1TDSPJ
