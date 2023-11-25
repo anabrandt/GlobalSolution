@@ -16,7 +16,7 @@ automatizado das etapas do pré-natal - com um diagnóstico mais que eficiente
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
-**Faça uma lista de tecnologias e técnicas utilizadas (a justificativa e descrição são opcionais)**:
+**tecnologias e técnicas utilizadas**:
 
 - `Jupyter Notebook: `: Para análise exploratória de dados.
 - `Pandas e NumPy`: descrição da funcionalidade 2
