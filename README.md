@@ -18,11 +18,15 @@ automatizado das etapas do pré-natal - com um diagnóstico mais que eficiente
 
 **tecnologias e técnicas utilizadas**:
 
-- `Jupyter Notebook: `: Para análise exploratória de dados.
-- `Pandas e NumPy`: descrição da funcionalidade 2
-- `React (no contexto de Next.js)`: Para renderizar visualizações na web
-- `Flask`: Framework web para Python, utilizado para criar o servidor e integrar modelos de machine learning.
-- `SASS: `: Estilização de componentes.
+- `java`
+- `Javascript`
+- `React (no contexto de Next.js)`
+- `SQL`
+- `SASS`
+
+## 🔒 Acessos
+para acessar o site insira o email e senha, o mesmo se aplica para o cadastro
+
 
 ## 🛠️ Membros 1TDSPJ
 
